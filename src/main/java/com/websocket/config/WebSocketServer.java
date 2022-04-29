@@ -78,6 +78,10 @@ public class WebSocketServer {
             websocketMap.remove(userId);
             //从set中删除
             subOnlineCount();
+
+
+
+
         }
         log.info("用户退出:" + userId + ",当前在线人数为:" + getOnlineCount());
     }
