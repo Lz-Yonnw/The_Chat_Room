@@ -78,10 +78,6 @@ public class WebSocketServer {
             websocketMap.remove(userId);
             //从set中删除
             subOnlineCount();
-
-
-
-
         }
         log.info("用户退出:" + userId + ",当前在线人数为:" + getOnlineCount());
     }
@@ -91,6 +87,15 @@ public class WebSocketServer {
      */
     @OnMessage
     public void onMessage(String message, Session session) {
+
+
+
+
+
+
+
+
+
         log.info("用户消息:" + userId + ",报文:" + message);
         //可以群发消息
         //消息保存到数据库、redis
